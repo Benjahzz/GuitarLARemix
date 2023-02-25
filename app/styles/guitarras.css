@@ -1,0 +1,65 @@
+.guitarras-grid{
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(95%,35rem),1fr));
+}
+
+.guitarra{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.guitarra .contenido{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.guitarra .contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.guitarra .descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical ;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+.guitarra .precio{
+    color: var(--primary);
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 900;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.formulario select{
+    text-align: center;
+    padding: 1rem;
+    border: .1rem solid var(--black);
+    border-radius: 1rem;
+}
+.formulario input[type="submit"]{
+    margin-top: 3rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1.4rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.formulario input[type="submit"]:hover{
+    background-color: var(--primary);
+}
